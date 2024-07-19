@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+    // Activity 1 Variable Decalration
+  //Task 1
+    var number = 2;
+    console.log(number)
+ //Task 2
+    let string = "This is a String ";
+    console.log(string)
+
+    //Activity 2 Constant Declaration
+     //Task 3
+    const bool = true
+    console.log(bool);
+
+  //Activity 3 Data Types
+ //Task 4
+ let a = 1;
+ let b = "String Value";
+ let c = true;
+ let d = {};
+ let e = [];
+ console.log(typeof(a))
+ console.log(typeof(b))
+ console.log(typeof(c))
+ console.log(typeof(d))
+ console.log(typeof(e))
+
+ // Activity 4 Reassigning Variable
+ //Task 5
+
+let value = 3;
+ console.log(value)
+ value  = 4;
+ console.log(value)
+// here i tried by using var because has functional Scope but as it was mentioned that we need to do it specifically by using let so i reassignned the value of let
+
+// Activity 5 Understanding const
+ //Task 6
+
+ const value1 = 3;
+ console.log(value1)
+ value1  = 4;
+ console.log(value1)
+// It mentioned that Assignment to constant variable which is not possible
+
+// Feature Request 
+// 1. Variable Type Console log
+let aa = 1;
+ let bb = "String Value";
+ let cc = true;
+ let dd = {};
+ let ee = [];
+ let allVariables = [aa,bb,cc,dd,ee]
+
+ allVariables.forEach(element => {
+    console.log(element)
+    console.log(typeof(element))
+    
+ });
+ 
+
+
+   </script> 
+</body>
+</html>
