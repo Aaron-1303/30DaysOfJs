@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Day5</h1>
+    <script>
+//Task 1
+const evenOdd = (a)=>
+{
+const check = a % 2 == 0 ? "Given number is even " : "Given number is odd"
+console.log(check)
+}   
+evenOdd(2)
+
+//Task 2
+const square = (a)=>
+{
+value = a*a 
+console.log(value)
+}
+square(5)
+//Task 3
+const isLarger = (a,b)=>
+{
+    if(a>b){
+        console.log(`${a} is larger`)
+}else{
+    console.log(`${b} is larger`)
+}
+}
+isLarger(2,3)
+
+// Task 4
+const strignConcat = (a,b) =>
+{
+    return a+b;
+}
+console.log(strignConcat("Hello ", "World"))
+//Task 5
+const arrow = (a,b) =>
+{
+    return a+b;
+}
+console.log(strignConcat(2,2))
+
+//Task 6
+const string = "Hello My Name is Aaron $";
+const specialchar = ["!" , "@",  "#" , "$" , "%" , "^" , "&" ]
+function charcheck(){
+    for (const char of specialchar){
+        if(string.includes(char)){
+            console.log(`Given String has special character ${char}`)
+        }
+    }
+}
+charcheck();
+
+
+</script>
+</body>
+</html>
