@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Day4</h1>
+   <script>
+//Task 1
+for (i = 1;i<11;i++){
+    console.log(i)
+}
+// Task 2
+for (j = 0;j<11;j++){
+    console.log(`5 X ${j} = ${j*5}`)
+}
+// Task 3
+
+let x = 1
+let sum = 0;
+while(x<=10){
+    console.log(sum+=x) ; x++
+}
+// Task 4
+let decrease = 10;
+while(decrease>=0){
+    console.log(decrease)
+    decrease--
+}
+// Task 5
+let dowhile = 1
+do{
+    console.log(dowhile), 
+     dowhile++
+}while(dowhile<5)
+//Task 6
+let factorial = 5;
+result = 1
+do{
+   result *= factorial;
+    factorial--
+}
+while(factorial>1)
+console.log("Task 6")
+console.log(result)
+  
+// Task 7 Patterns
+for (let i = 1; i <= 5; i++) {
+  let stars = ''; 
+  for (let j = 1; j <= i; j++) {
+    stars += '*'; 
+  }
+  console.log(stars); 
+}
+//Task 8 Continue 
+for (br = 1; br < 10; br++){
+    if(br==5){
+        continue;
+    }
+   console.log(br)
+}
+
+//Task 9 Break 
+for (br = 1; br < 10; br++){
+    if(br==5){
+        break;
+    }
+   console.log(br)
+}
+
+   </script> 
+</body>
+</html>
