@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Day3</h1>
+    <script>
+// Task 1 If-else Statements
+let a = 10;
+if(a>0){
+    console.log("The number is positive")
+}
+else if(a<0){
+    console.log("The number is negative")
+}
+else{
+    console.log("The number is zero")
+}
+
+// Task 2
+let age = 18;
+if(a>=18){
+    console.log("Yes You are eligible for voting")
+}
+else if(a<18){
+    console.log("No you are not eligible for Voting ")
+}
+//Task 3
+
+let b = 40;
+let c = 60;
+let d = 30;
+
+// Assume that b is the greatest
+if (b > c) {
+    if (b > d) {
+        console.log("b is the greatest");
+    } else {
+        console.log("d is the greatest");
+    }
+} else {
+    if (c > d) {
+        console.log("c is the greatest");
+    } else {
+        console.log("d is the greatest");
+    }
+}
+
+
+//Another way
+// let b = 40;
+// let c = 60;
+// let d = 30;
+// // Just assume that b is the greatest
+
+//     if(b>c && b>d){
+//     console.log("b is the greatest")
+// }
+// else if(c>b && c>d){
+//     console.log("c is the greatest")
+// }
+// else{
+//     console.log("d is the greatest")
+// }
+
+//Task 4 Switch Statement 
+let day = new Date();
+let day11 = day.getDay();
+let dayName
+
+switch (day11) {
+  case 0:
+    dayName = 'Monday';
+    break;
+  case 1:
+    dayName = 'Tuesday';
+    break;
+  case 2:
+    dayName = 'Wednesday';
+    break;
+  case 3:
+    dayName = 'Thursday';
+    break;
+  case 4:
+    dayName = 'Friday';
+    break;
+  case 5:
+    dayName = 'Saturday';
+    break;
+  case 6:
+    dayName = 'Sunday';
+    break;
+  default:
+    dayName = 'Invalid day';
+}
+
+console.log(dayName); 
+
+//Task 6 Conditional 
+let oddoreven = 3;
+const check = oddoreven % 2 == 0 ? "Given number is even " : "Given number is even "
+console.log(check);
+
+
+//Task 7 
+const leapyear = 2020;
+
+if ((leapyear % 4 == 0 && leapyear % 100 != 0) || leapyear % 400 == 0) {
+    console.log("Given year is a leap year");
+}
+    </script>
+</body>
+</html>
