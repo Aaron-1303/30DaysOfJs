@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Day6</h1>
+    <script>
+        //Task 1
+const arr = [1,2,3,4,10]
+arr.forEach((val)=> console.log(val))
+//Task 2
+console.log("task2")
+console.log(arr[0])
+
+console.log(arr[arr.length-1])
+//Task 3
+arr.push(5)
+console.log(arr)
+
+//Task 4
+arr.pop()
+console.log(arr)
+
+//Task 5
+arr.shift()
+console.log(arr)
+
+//Task 6
+arr.unshift(0)
+console.log(arr)
+
+
+
+//Task 7
+console.log("This is task 7")
+const mappedarr = arr.map((num)=>{return num*2})
+console.log(mappedarr)
+
+//Task 8
+console.log("This is task 8")
+const filterarr = arr.filter((num)=>{return num%2 == 0})
+console.log(filterarr)
+
+//Task 9
+const initvalue = 0
+const reducearr = arr.reduce((acc, curval)=>{return acc + curval},initvalue)
+console.log(reducearr)
+console.log(arr)
+
+// Task 10
+for (let i = 0; i<arr.length; i++){
+    console.log(arr[i])
+}
+//Task 11
+console.log("This is taks 10")
+arr.forEach(element => {
+   console.log(element) 
+});
+// Task 12
+
+const arr2D = [
+    [1,2,3],[4,5,6],[7,8,9]
+
+]
+const maparr2D = arr2D.map((row, i) => row.map((element, j) => element + arr2D[i][j]));
+
+console.log(maparr2D)
+
+// Task 13
+console.log(maparr2D[2][1])
+    </script>
+</body>
+</html>
